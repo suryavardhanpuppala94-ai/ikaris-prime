@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+        text-align:center;
+        color:rgb(56, 56, 196)
+    }
+    p{
+        text-align:center;
+    }
+    body{
+        background-color: #b3ceeb;
+    }
+    .container{
+        background-color: #f5f7fa;
+        width:55%;
+        height:1350px;
+        margin-left:380px;
+        padding:20px;
+        border-radius:10px;
+        margin-top:50px;
+        box-shadow:0px 0px 10px 5px rgb(171, 162, 162)
+    
+    }
+    input[type=text],
+    input[type=date],
+    input[type=tel],
+    input[type=email]{
+        width:600px;
+        height:30px;
+        border-radius:5px;
+
+    }
+    
+</style>
+<body>
+    <form method="post" action="#">
+    <div class="container">
+        <h2>Voter Registration Form</h2>
+        <p>Please enter your details carefully.</p>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name"><b>Full Name:</b></label><br>
+            <input type="text" id="name" placeholder="Enter Your Name" reuired><br><br>
+            <label for="parents"><b>Father's/Mother's Name:</b></label><br>
+            <input type="text" id="parents" placeholder="Enter parent/gardien nameS" name="parents" required><br><br>
+            <label for="date"><b>Date Of Birth:</b></label><br>
+            <input type="date" id="date" placeholder="dd-mm-yyyy" required><br><br>
+            <label><b>Gender:</b></label><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required><br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required><br>            
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="number"><b>Mobile Number:</b></label><br>
+            <input type="tel" id="number" placeholder="Enter 10-digit mobile number"><br><br>
+            <label for="email"><b>Email Address:</b></label><br>
+            <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+            <label for="address"><b>Address:</b></label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Address Details</legend>
+            <label for="address"><b>Residential Address:</b></label><br>
+            <textarea id="address" name="address" rows="8" cols="85" placeholder="Enter your complete residential address"></textarea><br><br>
+            <label for="state"><b>States:</b></label><br>
+            <select id="state" name="state" required style="width:600px;height:30px;border-radius:5px;">
+                <option>--select state--</option>
+                <option value="Andrapradesh">Andhra Pradesh</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="gujarat">Gujrata</option>
+                <option value="westbengal">West Bengal</option>
+                <optionvalue="karnataka">Karnataka</optionvalue>
+                <optionvalue="kerala">Kerala</optionvalue>
+            </select>
+            <label for="district"><b>District:</b></label><br>
+            <input type="text" id="district" name="district" placeholder="Enter District"><br><br>
+            <label for="pincode"><b>Pin Code:</b></label><br>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter Pin Code"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Identification Details</legend>
+            <label for="identity"><b>Identity Document:</b></label><br>
+            <select id="identity" name="identity" required style="width:600px;height:30px;border-radius:5px">
+                <option>~select Document~</option>
+                <option value="aadhar">Aadhar card</option>
+                <option value="pan card">Pan card</option>
+                 <option value="driving license">Driving License</option>
+                  <option value="passport">Passport</option>
+            </select>
+            
+                  <label for="idnumber"><b>Identification Number:</b></label><br>
+                  <input type="tel" id="idnumber" name="idnumber" placeholder="Enter Identification Number"><br><br>
+                  <label for="file"><b>Upload Supporting Document:</b></label><br>
+                  <input type="file" id="file" name="file" accept=".jpg,.png,.pdf,.doc,.docx"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Declaration</legend>
+            <input type="checkbox" id="declaration" name="declaration">
+            <label for="declaration">I declare that the information provided is true and correct to the best of my knowledge.</label>
+
+        </fieldset>
+        <div class="super">
+            <button type="submit" style="text-align:center;margin-top:20px;text-align:center; background-color:navy;  color:whitesmoke;width:200px;height:40px;border-radius:5px; cursor:pointer;" >Submit</button>
+            <button type="reset" style="text-align:center;margin-top:20px;text-align:center; background-color:navy;  color:whitesmoke;width:200px;height:40px;border-radius:5px; cursor:pointer;">Clear Form</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
